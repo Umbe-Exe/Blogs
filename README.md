@@ -71,7 +71,6 @@ read\index.php:
 
 read\read.js:
   490:         window.location.href = "https://www.umbe.website";
-
 ```
 
 ###### These are the locations of the directories you might want to change:
@@ -84,9 +83,6 @@ editing\index.php:
 editing\phpScript\updateStory.php:
   18: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/blog.txt";
   26: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/url.txt";
-
-editor\RFM\filemanager\include\Response.php:
-  23: 	const HTTP_ALREADY_REPORTED = 208;      // RFC5842
 
 extra\blog\index.php:
   16:     $dirname = dirname("/storage/emulated/0/READY/" . $blog_id);
@@ -114,3 +110,12 @@ extra\blog\index.php:
 - The AWAIT directory holds data related to the blogs to be confirmed
 
 It is suggested to keep the AWAIT directory outside of the document root.
+
+###### Change <admin_password> to your desired password to freely access the filemanager through the interface, keep it a secret:
+
+```
+editor\RFM\filemanager\config\config.php:
+  189  
+  190:     'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
+  191  
+```
