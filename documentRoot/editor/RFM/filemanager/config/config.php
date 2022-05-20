@@ -187,7 +187,7 @@ $config = array(
     |
     */
 
-    'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "hfgdcj754"),
+    'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
 
     //--------------------------------------------------------------------------------------------------------
     // YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
