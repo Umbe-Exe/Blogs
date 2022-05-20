@@ -108,3 +108,9 @@ editor\phpScript\sendStory.php:
 extra\blog\index.php:
   19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id);
 ```
+
+- The READY directory holds data related to the blogs available to the public
+
+- The AWAIT directory holds data related to the blogs to be confirmed
+
+It is suggested to keep the AWAIT directory outside of the document root.
