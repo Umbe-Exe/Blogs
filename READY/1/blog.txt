@@ -1,0 +1,137 @@
+<h1 style="text-align: center;"><span style="font-size:26px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">Lavoro contemporaneo</span></strong></span></h1>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Il <strong>lavoro </strong>&egrave; un&#39;attivit&agrave; produttiva, che implica la messa in atto di conoscenze rigorose e metodiche, intellettuali e/o manuali, per produrre e dispensare beni e servizi in cambio di un compenso monetario.</span></span></p>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td rowspan="2" style="text-align: center; vertical-align: middle; width: 40%;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled.jpg" style="height: 50%; width: 100%;" /></td>
+			<td rowspan="2" style="text-align: center; vertical-align: middle; height: 90%;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled.png" style="width: 79%; height: 46%;" /><br />
+			<img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(1).png" style="width: 68%; height: 47%;" /></td>
+			<td rowspan="2" style="text-align: center; vertical-align: middle;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(1).jpg" style="width: 100%; height: 100%;" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<hr style="height:2px;background-color:lightgrey;" />
+<h1 style="text-align: center;"><strong><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:26px;">Soft Skills</span></span></strong></h1>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">In ambito lavorativo, la scelta del candidato ideale passa attraverso l&rsquo;analisi delle skills, o competenze, che questo possiede. Le soft skills sono definite come le competenze trasversali che riguardano le capacit&agrave; comportamentali e relazionali dettate dalla nostra personalit&agrave;. Non sono correlate a una sola posizione lavorativa, ma sono trasversali proprio perch&eacute; rappresentano competenze richieste in pi&ugrave; settori diversi tra loro. Sono doti fondamentali, che condizionano il modo in cui affronti le richieste e le sfide dell&rsquo;ambiente lavorativo, per questo risultano cos&igrave; determinanti e differenzianti in una scelta di candidatura.</span></span></p>
+
+<table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td style="text-align: center; vertical-align: top;"><span style="font-size:26px;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(2).png" style="width: 80%; height: 45%;" /></span></td>
+			<td style="text-align: center; vertical-align: bottom;"><span style="font-size:26px;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(2).jpg" style="width: 50%; height: 33%;" /></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Le <strong>Soft Skill</strong> non si apprendono sui libri, anche se possono essere acquisite nel corso di un percorso educativo e formativo di qualit&agrave; e sicuramente si acquisiscono nel corso dell&#39;esperienza di vita personale e lavorativa.</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Alcuni esempi di soft skills sono:</span></span></p>
+
+<ul>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">problem solving</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">team working</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">resistenza allo stress</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">gestire le informazioni</span></span></li>
+</ul>
+
+<hr style="height:2px;background-color:lightgrey;" />
+<p style="text-align: center;"><span style="font-size:26px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">Hard Skills</span></strong></span></p>
+
+<table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td>
+			<h2><span style="font-size:26px;"><span style="color:#ff0000;"><span style="font-family:Arial,Helvetica,sans-serif;">Lavori nel settore informatico</span></span></span></h2>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Le 4 principali aree in cui possono essere articolate le professioni informatiche:</span></span></p>
+
+			<ul style="list-style-type: disc;">
+				<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">area sviluppo</span></span></li>
+				<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">area sistemi informativi</span></span></li>
+				<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">area web</span></span></li>
+				<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">area consulenza/manager</span></span></li>
+			</ul>
+			</td>
+			<td style="text-align: center; vertical-align: middle; width: 30%;"><span style="font-size:26px;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(3).png" style="width: 100%; height: 69%;" /></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<ul>
+</ul>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Professioni attinenti all&rsquo;area sviluppo informatico sono: Programmatore e Analista programmatore. Si tratta di due figure distinte, che per&ograve;, talvolta, possono coincidere in un&rsquo;unica persona. L&rsquo;analista, generico, possiede competenze leggermente pi&ugrave; ampie rispetto al primo. Web developer, ovvero colui che si occupa della creazione di un sito web e della manutenzione dello stesso.&nbsp; L&rsquo;area del sistemista informatico comprende anche il pi&ugrave; vasto campo di networking e sicurezza. Nello specifico possiamo individuare 4 professioni: Manager di sistemi o System manager, che si occupa della gestione e del coordinamento delle infrastrutture informatiche: hardware, software e tecnologie di trasmissione, inoltre &egrave; incaricato di scegliere nuovi progetti di sviluppo tecnologico.&nbsp;</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Amministratore di Sistema: Il suo ruolo &egrave; ampio e spazia dalla progettazione della rete alla gestione delle interazioni tra sistemi e reti fino alla diagnosi e alla risoluzione di problemi legati al server, alla web mail, ai servizi ftp, ai database e a tutti gli altri servizi di rete responsabili del funzionamento regolare del sistema.&nbsp;</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Di una delle professioni informatiche in area web ne abbiamo gi&agrave; parlato: il web developer.&nbsp;</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">La figura del consulente &egrave; particolarmente importante in un progetto aziendale. Si tratta di una figura altamente specializzata in grado di effettuare un&rsquo;analisi dei fabbisogni e proporre soluzioni adeguate, capace, inoltre, di gestire progetti complessi.</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Le nuove professioni identificate in questo campo sono essenzialmente riconducibili a due figure specifiche: il Digital Transformation Manager e il Digital Life Coach.</span></span></p>
+
+<hr style="height:2px;background-color:lightgrey;" />
+<h1 style="text-align: center;"><span style="font-size:26px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Lavoro nel settore informatico</strong></span></span></h1>
+
+<table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td rowspan="2">
+			<h2><span style="font-size:26px;"><span style="color:#ff0000;"><span style="font-family:Arial,Helvetica,sans-serif;">Distinzione tra lavoro manuale e lavoro intellettuale</span></span></span></h2>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Da sempre esiste una divisione netta tra lavoro manuale in qualche modo bistrattato e lavoro intellettuale o impiegatizio e ci&ograve; si riflette anche sui diversi trattamenti economici.</span></span></p>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">attualmente l&#39;avanzamento tecnologico ha fatto s&igrave; che la divisione sia meno netta che in passato. Se si pensa alle catene di montaggio robotizzate dove i cosiddetti operai devono mettere mano ai robot riparando o riprogrammando, si capisce bene che non si tratta di un banale lavoro manuale, ma di qualcosa di pi&ugrave; complesso. Al contrario oggi, spesso l&#39;attivit&agrave; di un impiegato si riduce all&#39;immissione di dati in appositi programmi che poi effettuano tutte le operazioni del caso. Di fatto l&#39;organizzazione a catena di montaggio rischia di scomparire nell&#39;industria per imporsi nei servizi. Gi&agrave; parte dei servizi segue l&#39;organizzazione della catena di montaggio e l&#39;open space &egrave; la versione impiegatizia del capannone industriale.</span></span></p>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Rimane la percezione dell&#39;operaio come lavoro manuale e dell&#39;impiegato come lavoro intellettuale e ci&ograve; si riflette anche negli emolumenti percepiti. Il lavoro dell&#39;operaio viene considerato faticoso. In qualche modo l&#39;impiegato viene concepito come se tramite il lavoro si realizzasse, mentre l&#39;operaio no. Ci&ograve; si riflette sugli stipendi ed &egrave; facile trovare semplici operai che con turni notturni o festivi e ore di straordinario abbiamo uno stipendio paragonabile a quello di un quadro nell&#39;ambito dei servizi.</span></span></p>
+
+			<h2><span style="font-size:26px;"><span style="color:#ff0000;"><span style="font-family:Arial,Helvetica,sans-serif;">Lavori nel settore quaternario</span></span></span></h2>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Il settore quaternario &egrave; l&#39;insieme delle attivit&agrave; economiche nei settori delle nuove tecnologie dell&#39;informazione. Appartengono al terziario avanzato le aziende di telecomunicazioni, le aziende informatiche, le aziende new media e i servizi di consulenza e di elaborazione delle informazioni. Il termine terziario avanzato &egrave; stato coniato negli ultimi decenni.</span></span></p>
+
+			<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">La percentuale del terziario avanzato nei confronti degli altri macro-settori permette di determinare il grado di sviluppo economico di un paese. Per questa sua importante caratteristica anche il terziario avanzato &egrave; di recente considerato come uno dei principali settori produttivi di un sistema economico ed &egrave; anche conosciuto con il termine di settore quaternario in quanto si aggiunge come quarto settore agli altri tre settori produttivi tradizionali di un sistema economico ovvero: primario, secondario, terziario.</span></span></p>
+			</td>
+			<td style="text-align: center; vertical-align: middle; width: 40%;"><span style="font-size:26px;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(3).jpg" style="width: 100%; height: 56%;" /></span></td>
+		</tr>
+		<tr>
+			<td style="text-align: center; vertical-align: middle; width: 40%;"><span style="font-size:26px;"><img alt="" src="https://www.umbe.website/editor/RFM/source/Untitled%20(4).jpg" style="width: 100%; height: 67%;" /></span><br />
+			&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr style="height:2px;background-color:lightgrey;" />
+<h1 style="text-align: center;"><span style="font-size:26px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Norme e sicurezze sul lavoro</strong></span></span></h1>
+
+<h2><span style="font-size:26px;"><span style="color:#ff0000;"><span style="font-family:Arial,Helvetica,sans-serif;">Norme e sicurezza sul lavoro</span></span></span></h2>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Quando si parla di sicurezza sul lavoro si fa riferimento all&#39;insieme di misure, provvedimenti, valutazioni e monitoraggi che bisogna mettere in atto all&#39;interno dei luoghi di lavoro per tutelare la salute e l&#39;integrit&agrave; dei lavoratori, proteggendoli dai rischi presenti.</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Si tratta, dunque, di un tassello fondamentale nel quadro della corretta gestione aziendale che fa leva su due dimensioni in particolari:</span></span></p>
+
+<ul>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">la prevenzione:<br />
+	ovvero le misure previste per evitare che si verifichi un evento dannoso;</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">la protezione:<br />
+	ovvero le misure previste per limitare le conseguenze di un evento dannoso che si verifica;</span></span></li>
+</ul>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">La sicurezza sul lavoro &egrave; importante perch&eacute; consente di eliminare, ridurre o, comunque, controllare:</span></span></p>
+
+<ul>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">fattori rischio derivanti dai processi lavorativi;</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">incidenti e infortuni per i lavoratori;</span></span></li>
+	<li aria-level="1"><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">l&#39;insorgere di malattie professionali;</span></span></li>
+</ul>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Si rivela utile, dunque, per garantire e tutelare il benessere psico-fisico dei lavoratori, contribuendo a creare un ambiente di lavoro adatto e positivo, cosa che si riflette sulla produttivit&agrave; e sullo sviluppo dell&#39;azienda stessa.</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">In passato le leggi che tutelavano i lavoratori erano meno chiare e molto frammentarie, spesso si occupavano di un aspetto specifico senza focalizzarsi sul quadro generale. Nel corso degli anni la normativa in materia di sicurezza e salute dei lavoratori si &egrave; evoluta, perfezionandosi e determinandosi sempre di pi&ugrave;.</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Le principali figure che hanno il dovere di contribuire a rendere efficace la sicurezza sul lavoro in azienda sono:</span></span></p>
+
+<p><span style="font-size:26px;"><span style="font-family:Times New Roman,Times,serif;">Datore di lavoro, Dirigente per la sicurezza, Preposto per la sicurezza, Responsabile del servizio prevenzione e protezione, Addetto al servizio prevenzione e protezione, Medico Competente, Rappresentante dei lavoratori per la Sicurezza, il Lavoratore stesso e gli Addetti alle emergenze (lotta antincendio e primo soccorso). come si pu&ograve; vedere sono un grande array di persone per poter fornire la sicurezza necessaria nel campo lavorativo.</span></span></p>
