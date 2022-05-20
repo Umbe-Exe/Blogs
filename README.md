@@ -73,7 +73,7 @@ read\read.js:
   490:         window.location.href = "https://www.umbe.website";
 ```
 
-###### These are the locations of the directories you might want to change:
+###### These are the locations of the directory strings you might want to change:
 
 ```
 editing\index.php:
