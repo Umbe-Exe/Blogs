@@ -118,11 +118,29 @@ It is suggested to keep the AWAIT directory outside of the document root.
 ###### Change <admin_password> to your desired password to freely access the filemanager through the interface, keep it a secret:
 
 ```
+/*
+    |--------------------------------------------------------------------------
+    | Access keys
+    |--------------------------------------------------------------------------
+    |
+    | add access keys eg: array('myPrivateKey', 'someoneElseKey');
+    | keys should only containt (a-z A-Z 0-9 \ . _ -) characters
+    | if you are integrating lets say to a cms for admins, i recommend making keys randomized something like this:
+    | $username = 'Admin';
+    | $salt = 'dsflFWR9u2xQa' (a hard coded string)
+    | $akey = md5($username.$salt);
+    | DO NOT use 'key' as access key!
+    | Keys are CASE SENSITIVE!
+    |
+    */
+
+
 editor\RFM\filemanager\config\config.php:
   189  
   190:     'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
   191  
 ```
+
 ###### Other lines of interest for accessing the database:
 
 ```
@@ -145,7 +163,6 @@ extra\blog\index.php:
   3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 extra\reset\index.php:
-  1  <?php
   2: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 extra\reset\join.php:
