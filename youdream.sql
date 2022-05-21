@@ -6,7 +6,7 @@
 -- Creato il: Mag 20, 2022 alle 18:10
 -- Versione del server: 5.6.38
 -- Versione PHP: 7.4.3
-
+SET FOREIGN_KEY_CHECKS = 0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -477,10 +477,12 @@ ALTER TABLE `subscription`
   ADD CONSTRAINT `fk_user_has_user_user2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 COMMIT;
 
+SET FOREIGN_KEY_CHECKS = 1;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
-GRANT ALL PRIVILEGES ON 'youdream'.* TO 'root'@'localhost' WITH GRANT OPTION;
+/*CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';*/
+/*GRANT ALL PRIVILEGES ON 'youdream'.* TO 'root'@'localhost' WITH GRANT OPTION;*/
