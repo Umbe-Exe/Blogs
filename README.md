@@ -77,10 +77,8 @@ read\read.js:
 
 ```
 editing\index.php:
-  30  
   31: $toedit = file_get_contents("/storage/emulated/0/READY/" . $_SESSION["story"] . "/blog.txt");
   32: $image = file_get_contents("/storage/emulated/0/READY/" . $_SESSION["story"] . "/url.txt");
-  33  
 
 editing\phpScript\updateStory.php:
   18: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/blog.txt";
