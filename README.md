@@ -123,7 +123,7 @@ editor\RFM\filemanager\config\config.php:
   190:     'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
   191  
 ```
-###### Other lines of intrest for accessing the database:
+###### Other lines of interest for accessing the database:
 
 ```
 index.php: 
