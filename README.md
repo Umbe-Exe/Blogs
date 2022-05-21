@@ -123,3 +123,82 @@ editor\RFM\filemanager\config\config.php:
   190:     'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
   191  
 ```
+###### Other lines of intrest for accessing the database:
+
+```
+index.php: 
+  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+editing\index.php:
+  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+editing\phpScript\updateStory.php:
+  10: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+editor\index.php:
+  4: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+editor\phpScript\sendStory.php: 
+  8: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+extra\blog\index.php:
+  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+extra\reset\index.php:
+  1  <?php
+  2: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+extra\reset\join.php:
+  8:         $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+extra\verify\index.php:
+  2: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+extra\verify\join.php: 
+  8:         $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\changeName.php:
+  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\join.php:
+  7:     $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\list.php: 
+  11: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\logout.php:  
+  6: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\sendMail.php:
+  7:     $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+phpScript\sendPwReset.php:
+  7:     $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\index.php: 
+  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\comment.php:
+  10: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\delete.php:
+  10: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\dislike.php:
+  9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\follow.php:
+  9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\like.php: 
+  9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\post.php: 
+  13: $mysqli = new mysqli("localhost", "root", "root", "youdream");  
+
+read\phpScript\unfollow.php:  
+  9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+
+read\phpScript\update.php: 
+  6: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+```
