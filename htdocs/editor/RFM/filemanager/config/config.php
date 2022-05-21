@@ -77,7 +77,7 @@ $config = array(
     | with start and final /
     |
     */
-    'upload_dir' => '/editor/RFM/source/' . (isset($_SESSION["id"])?($_SESSION["id"] . '/'):''),
+    'upload_dir' => '/editor/RFM/source/' . (isset($_SESSION["id"]) ? ($_SESSION["id"] . '/') : ''),
     /*
     |--------------------------------------------------------------------------
     | relative path from filemanager folder to upload folder
@@ -86,8 +86,7 @@ $config = array(
     | with final /
     |
     */
-    
-    'current_path' => '../source/' . (isset($_SESSION["id"])?($_SESSION["id"] . '/'):''),
+    'current_path' => '../source/' . (isset($_SESSION["id"]) ? ($_SESSION["id"] . '/') : ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -188,7 +187,7 @@ $config = array(
     |
     */
 
-    'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "admin_password"),
+    'access_keys' => array(isset($_SESSION["id"]) ? $_SESSION["id"] : "ER765tyjgd"),
 
     //--------------------------------------------------------------------------------------------------------
     // YOU CAN COPY AND CHANGE THESE VARIABLES INTO FOLDERS config.php FILES TO CUSTOMIZE EACH FOLDER OPTIONS
