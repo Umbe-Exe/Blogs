@@ -77,16 +77,29 @@ read\read.js:
 
 ```
 editing\index.php:
+  30  
   31: $toedit = file_get_contents("/storage/emulated/0/READY/" . $_SESSION["story"] . "/blog.txt");
   32: $image = file_get_contents("/storage/emulated/0/READY/" . $_SESSION["story"] . "/url.txt");
+  33  
 
 editing\phpScript\updateStory.php:
   18: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/blog.txt";
+
   26: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/url.txt";
+
+editor\phpScript\saveDraft.php:
+  17: $fileLocation = "/storage/emulated/0/htdocs/editor/RFM/source/" . $_SESSION["id"] . "/" . $name . ".html";  
+
+editor\phpScript\sendStory.php: 
+  18: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/blog.txt";
+  26: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/url.txt";
 
 extra\blog\index.php:
   16:     $dirname = dirname("/storage/emulated/0/READY/" . $blog_id);
-  19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id);
+  19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id); 
+
+extra\verify\join.php:
+  30:         $dirname = dirname("/storage/emulated/0/htdocs/editor/RFM/source/" . $_SESSION["id"] . "/ok.txt");
 
 phpScript\list.php:
   40:     if ($image = file_get_contents("/storage/emulated/0/READY/" . $row["id"] . "/url.txt"))
@@ -94,15 +107,8 @@ phpScript\list.php:
 read\index.php:
   236:             <?php echo file_get_contents("/storage/emulated/0/READY/" . $id . "/blog.txt"); ?>
 
-read\phpScript\delete.php:
+read\phpScript\delete.php: 
   14: $dir = "/storage/emulated/0/READY/" .  $_SESSION["story"];
-
-editor\phpScript\sendStory.php:
-  18: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/blog.txt";
-  26: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/url.txt";
-
-extra\blog\index.php:
-  19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id);
 ```
 
 - The READY directory holds data related to the blogs available to the public
