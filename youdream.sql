@@ -35,7 +35,7 @@ CREATE TABLE `blog` (
   `user_id` int(11) NOT NULL,
   `title` varchar(128) NOT NULL,
   `desc` varchar(512) NOT NULL,
-  `time_stamp` timestamp NULL DEFAULT NULL,
+  `time_stamp` timestamp NULL,
   `views` int(11) DEFAULT '0',
   `likes` int(11) DEFAULT '0',
   `dislikes` int(11) DEFAULT '0'
