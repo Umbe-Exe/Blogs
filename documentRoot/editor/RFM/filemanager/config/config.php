@@ -77,7 +77,7 @@ $config = array(
     | with start and final /
     |
     */
-    'upload_dir' => '/editor/RFM/source/' . $_SESSION["id"] . '/',
+    'upload_dir' => '/editor/RFM/source/' . (isset($_SESSION["id"])?($_SESSION["id"] . '/'):''),
     /*
     |--------------------------------------------------------------------------
     | relative path from filemanager folder to upload folder
@@ -86,7 +86,8 @@ $config = array(
     | with final /
     |
     */
-    'current_path' => '../source/' . $_SESSION["id"] . '/',
+    
+    'current_path' => '../source/' . (isset($_SESSION["id"])?($_SESSION["id"] . '/'):''),
 
     /*
     |--------------------------------------------------------------------------
