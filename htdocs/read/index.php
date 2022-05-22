@@ -26,7 +26,7 @@ $dislikes = $row["dislikes"];
 
 $mysqli->query("UPDATE blog SET views = views+1 WHERE id = $id");
 
-if (isset($_SESSION["id"])) { //get if the user has like or dislike or is following the publisher
+if (isset($_SESSION["id"])) { //get if the user has liked or disliked or is following the publisher
     $like = $mysqli->query("SELECT EXISTS(SELECT * FROM liked 
     WHERE user_id = " . $_SESSION["id"] . " AND blog_id = " . $_SESSION["story"] . ")")->fetch_array()[0];
     $dislike = $mysqli->query("SELECT EXISTS(SELECT * FROM disliked 
@@ -39,7 +39,7 @@ if (isset($_SESSION["id"])) { //get if the user has like or dislike or is follow
     WHERE subscriptor_id = " . $_SESSION["id"] . " AND user_id = " . $_SESSION["writer"] . ")")->fetch_array()[0];
 }
 
-$_SESSION["offsets"] = array(); //reset the offset for the each wall of comments
+$_SESSION["offsets"] = array(); //reset the loading offset for each wall of comments
 ?>
 
 <html>
