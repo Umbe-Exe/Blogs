@@ -8,11 +8,11 @@ Stable with both PHP 8.1.2 and PHP 7.4.3, other versions might give some problem
 
 ```
 index.js:
-  142:                 window.location.replace("https://www.umbe.website");
+  143:                 window.location.replace("https://www.umbe.website");
 
 index.php:
-   24:             <a href="https://www.umbe.website">
-  195:             <a href="https://www.umbe.website/read?story={$row["id"]}">
+   32:             <a href="https://www.umbe.website">
+  213:             <a href="https://www.umbe.website/read?story={$row["id"]}">
 
 editing\editing.js:
   38:         window.location.replace("https://www.umbe.website");
@@ -31,10 +31,10 @@ editor\index.php:
   29:             <a href="https://www.umbe.website">
 
 editor\phpScript\sendStory.php:
-   60: $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
-   61:     'Reply-To: webmaster@umbe.website' . "\r\n" .
-  108:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
-  130:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/blog?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Confirm submission</a>
+   61: $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
+   62:     'Reply-To: webmaster@umbe.website' . "\r\n" .
+  109:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
+  131:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/blog?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Confirm submission</a>
 
 editor\RFM\filemanager\config\config.php:
   71:     'base_url' => 'https://www.umbe.website',
@@ -52,25 +52,25 @@ extra\verify\verify.js:
   14:                 window.location.replace("https://www.umbe.website");
 
 phpScript\list.php:
-  55:                 <a class="paddup" href="https://www.umbe.website/read?story={$row["id"]}">
+  60:                 <a class="paddup" href="https://www.umbe.website/read?story={$row["id"]}">
 
 phpScript\sendMail.php:
-   25:         $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
-   26:             'Reply-To: webmaster@umbe.website' . "\r\n" .
-   74:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
-  102:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/verify?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Chose a password</a>
+   26:         $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
+   27:             'Reply-To: webmaster@umbe.website' . "\r\n" .
+   75:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
+  103:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/verify?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Chose a password</a>
 
 phpScript\sendPwReset.php:
-  25:         $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
-  26:             'Reply-To: webmaster@umbe.website' . "\r\n" .
-  74:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
-  96:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/reset?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Chose a password</a>
+  26:         $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
+  27:             'Reply-To: webmaster@umbe.website' . "\r\n" .
+  75:                         <a href="https://www.umbe.website" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-decoration: none;">
+  97:                                                 <a class="s-btn s-btn__primary" href="https://www.umbe.website/extra/reset?token=$secret" target="_parent" style="background: #0095FF;border: 1px solid #0077cc;box-shadow: inset 0 1px 0 0 rgba(102,191,255,.75);font-family: arial, sans-serif;font-size: 17px;line-height: 17px;color: #ffffff;text-align: center;text-decoration: none;padding: 13px 17px;display: block;border-radius: 4px;white-space: nowrap;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Chose a password</a>
 
 read\index.php:
-  61:             <a href="https://www.umbe.website">
+  62:             <a href="https://www.umbe.website">
 
 read\read.js:
-  490:         window.location.href = "https://www.umbe.website";
+  506:         window.location.href = "https://www.umbe.website";
 ```
 
 ###### These are the locations of the directory strings you might want to change:
@@ -82,30 +82,29 @@ editing\index.php:
 
 editing\phpScript\updateStory.php:
   18: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/blog.txt";
-
   26: $fileLocation = "/storage/emulated/0/READY/" . $blog_id . "/url.txt";
 
 editor\phpScript\saveDraft.php:
-  17: $fileLocation = "/storage/emulated/0/htdocs/editor/RFM/source/" . $_SESSION["id"] . "/" . $name . ".html";  
+  17: $fileLocation = "/storage/emulated/0/htdocs/editor/RFM/source/" . $_SESSION["id"] . "/" . $name . ".html";
 
-editor\phpScript\sendStory.php: 
+editor\phpScript\sendStory.php:
   18: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/blog.txt";
   26: $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/url.txt";
 
 extra\blog\index.php:
   16:     $dirname = dirname("/storage/emulated/0/READY/" . $blog_id);
-  19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id); 
+  19:     rename("/storage/emulated/0/AWAIT/" . $blog_id, "/storage/emulated/0/READY/" . $blog_id);
 
 extra\verify\join.php:
   30:         $dirname = dirname("/storage/emulated/0/htdocs/editor/RFM/source/" . $_SESSION["id"] . "/ok.txt");
 
 phpScript\list.php:
-  40:     if ($image = file_get_contents("/storage/emulated/0/READY/" . $row["id"] . "/url.txt"))
+  45:     if ($image = file_get_contents("/storage/emulated/0/READY/" . $row["id"] . "/url.txt"))
 
 read\index.php:
-  236:             <?php echo file_get_contents("/storage/emulated/0/READY/" . $id . "/blog.txt"); ?>
+  237:             <?php echo file_get_contents("/storage/emulated/0/READY/" . $id . "/blog.txt"); ?>
 
-read\phpScript\delete.php: 
+read\phpScript\delete.php:
   14: $dir = "/storage/emulated/0/READY/" .  $_SESSION["story"];
 ```
 
@@ -143,7 +142,7 @@ editor\RFM\filemanager\config\config.php:
 ###### Other lines of interest for accessing the database:
 
 ```
-index.php: 
+index.php:
   3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 editing\index.php:
@@ -155,7 +154,7 @@ editing\phpScript\updateStory.php:
 editor\index.php:
   4: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-editor\phpScript\sendStory.php: 
+editor\phpScript\sendStory.php:
   8: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 extra\blog\index.php:
@@ -170,19 +169,19 @@ extra\reset\join.php:
 extra\verify\index.php:
   2: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-extra\verify\join.php: 
+extra\verify\join.php:
   8:         $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 phpScript\changeName.php:
-  3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
+  5: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 phpScript\join.php:
   7:     $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-phpScript\list.php: 
+phpScript\list.php:
   11: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-phpScript\logout.php:  
+phpScript\logout.php:
   6: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 phpScript\sendMail.php:
@@ -191,7 +190,7 @@ phpScript\sendMail.php:
 phpScript\sendPwReset.php:
   7:     $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-read\index.php: 
+read\index.php:
   3: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 read\phpScript\comment.php:
@@ -206,15 +205,15 @@ read\phpScript\dislike.php:
 read\phpScript\follow.php:
   9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-read\phpScript\like.php: 
+read\phpScript\like.php:
   9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-read\phpScript\post.php: 
-  13: $mysqli = new mysqli("localhost", "root", "root", "youdream");  
+read\phpScript\post.php:
+  13: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-read\phpScript\unfollow.php:  
+read\phpScript\unfollow.php:
   9: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-read\phpScript\update.php: 
+read\phpScript\update.php:
   6: $mysqli = new mysqli("localhost", "root", "root", "youdream");
 ```
