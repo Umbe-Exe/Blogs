@@ -25,13 +25,13 @@ if ($result->num_rows > 0) {
         FROM user
         INNER JOIN subscription ON subscription.subscriptor_id = user.id
         INNER JOIN blog ON blog.user_id = subscription.user_id
-        WHERE blog.id = " . $blog_id);
+        WHERE blog.id = " . $blog_id); //all the followers' mail
 
     $writer = $mysqli->query("
         SELECT user.username, blog.title, blog.desc
         FROM user
         INNER JOIN blog ON blog.user_id = user.id
-        WHERE blog.id = " . $blog_id)->fetch_assoc();
+        WHERE blog.id = " . $blog_id)->fetch_assoc(); //the writer username and blog title, description
 
     $headers = 'From: "Brand" <webmaster@umbe.website>' . "\r\n" .
         'Reply-To: webmaster@umbe.website' . "\r\n" .
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
         'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    while ($row = $result->fetch_array()) {
+    while ($row = $result->fetch_array()) { //all the followers to notify
 
         $to      = $row["email"];
         $subject = $writer["username"] . ' has published a new story!';
@@ -133,4 +133,4 @@ EOD;
     }
 
     echo "Thanks";
-} else echo "Nope";
+} else echo "Nope"; //wrong token

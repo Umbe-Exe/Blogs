@@ -7,7 +7,7 @@ $desc = htmlspecialchars($_POST["desc"]);
 $tags = $_POST["tags"];
 $url = $_POST["url"];
 
-if ($title != "") $story .= "\r\n<div>Title: " . $title . "</div>";
+if ($title != "") $story .= "\r\n<div>Title: " . $title . "</div>"; //append the metadata
 if ($desc != "") $story .= "\r\n<div>Description: " . $desc . "</div>";
 if ($tags != "") $story .= "\r\n<div>Tags: " . $tags . "</div>";
 if ($url != "") $story .= "\r\n<div>Url: " . $url . "</div>";

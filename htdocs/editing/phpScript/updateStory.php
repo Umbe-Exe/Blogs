@@ -52,5 +52,5 @@ if (count($tags) > 0) {
     while ($row = $result->fetch_array())
         $query .= " (" . $blog_id . ", " . $row[0] . "),";
 
-    $mysqli->query(substr($query, 0, strlen($query) - 1) . " ON DUPLICATE KEY UPDATE blog_id=blog_id");
+    $mysqli->query(substr($query, 0, strlen($query) - 1) . " ON DUPLICATE KEY UPDATE blog_id=blog_id"); //if tag already tied do nothing
 }

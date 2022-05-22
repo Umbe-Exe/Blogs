@@ -1,5 +1,7 @@
 <?php session_start();
 
+if (!isset($_SESSION["id"])) die();
+
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 $stmt = $mysqli->prepare("
     UPDATE user 

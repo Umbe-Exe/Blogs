@@ -2,7 +2,7 @@ what = "rand";
 nomore = false;
 
 $(document).ready(function() {
-    $(window).scroll(function() {
+    $(window).scroll(function() { //passing callback to scroll event listener
         var scroll = $(window).scrollTop();
         if (scroll > 350) {
             $("nav").css("background-color", "white");
@@ -32,21 +32,22 @@ $(document).ready(function() {
             }
 
     });
-    $.get("phpScript/list.php?what=" + what)
+    $.get("phpScript/list.php?what=" + what) //does a first query when page loads
         .done(function(data) {
             $("#reco").append(data);
         });
 })
 
-function search(tag_id) {
-	if (what != tag_id) {
-    		document.getElementById("reco").innerHTML = '';
-    		what = tag_id;
-    		$.get("phpScript/list.php?what=" + what)
-        		.done(function(data) {
-            			$("#reco").append(data);
-        	});
-	}
+function search(tag_id) { //new search
+    if (what != tag_id) {
+        document.getElementById("reco").innerHTML = ''; //clears
+        what = tag_id;
+        nomore = false;
+        $.get("phpScript/list.php?what=" + what) //does a first query
+            .done(function(data) {
+                $("#reco").append(data);
+            });
+    }
 }
 
 function open(str) {
@@ -123,24 +124,24 @@ function setCredentials() {
         '<a id="link" href="javascript:forgot()"><br>Forgot password</a>';
 }
 
-function join() {
+function join() { //login
     $("*").css("cursor", "wait");
 
-    var re = /\S+@\S+\.\S+/;
-    if (re.test($("#email").val()))
-        $.post("phpScript/join.php", {
+    var re = /\S+@\S+\.\S+/; //common email pattern
+    if (re.test($("#email").val())) //testing the pattern
+        $.post("phpScript/join.php", { //sending a JSON over to join.php
             email: $("#email").val(),
             password: $("#password").val(),
             remember: $("#remember:checked").val()
         })
         .done(function(data) {
-            if (data == "invalid") {
+            if (data == "invalid") { //join.php double checks the email pattern
                 if ($("#warn").length == 0)
                     $("#check").before("<div id='warn'></div>");
                 $("#warn").text("Enter a valid email!");
             } else if (data == "ok") {
                 window.location.replace("https://www.umbe.website");
-            } else if (data == "noexist") {
+            } else if (data == "noexist") { //client couldnt login
                 if ($("#warn").length == 0)
                     $("#check").before("<div id='warn'></div>");
                 $("#warn").text("Wrong email or password!");
@@ -148,7 +149,7 @@ function join() {
 
             $("*").css("cursor", "");
         });
-    else {
+    else { //the pattern test failed
         if ($("#warn").length == 0)
             $("#check").before("<div id='warn'></div>");
 
@@ -168,7 +169,7 @@ function forgot() {
         '<a class="btn btn2 btn4" href="javascript:sendPwReset()">Continue</a>';
 }
 
-function sendPwReset() {
+function sendPwReset() { //user forgot the password
     $("*").css("cursor", "wait");
 
     var re = /\S+@\S+\.\S+/;
@@ -200,7 +201,7 @@ function sendPwReset() {
     }
 }
 
-function sendMail() {
+function sendMail() { //user wants to sign up
     $("*").css("cursor", "wait");
 
     var re = /\S+@\S+\.\S+/;
@@ -244,13 +245,13 @@ function changeName() {
     document.getElementById("overlay").style.opacity = '1';
 }
 
-function justName() {
+function justName() { //user wants to change the username
     $("*").css("cursor", "wait");
 
     $.post("phpScript/changeName.php", { name: $("#usern").val() })
         .done(function(data) {
 
-            if (data == "exist") {
+            if (data == "exist") { //the username exists already
                 if ($("#warn").length == 0)
                     $(".field").first().after("<div id='warn'></div>");
                 $("#warn").text("Already taken!");

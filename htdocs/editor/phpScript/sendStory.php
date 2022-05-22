@@ -12,7 +12,7 @@ $stmt->execute();
 
 $blog_id = $stmt->insert_id;
 
-$secret = md5(uniqid(mt_rand(), true));
+$secret = md5(uniqid(mt_rand(), true)); //to be confirmed
 $mysqli->query("INSERT INTO blog_confirm (blog_id, secret) VALUES (" . $blog_id . ", '" . $secret . "')");
 
 $fileLocation = "/storage/emulated/0/AWAIT/" . $blog_id . "/blog.txt";
@@ -28,13 +28,14 @@ $file = fopen($fileLocation, "w");
 fwrite($file, $_POST["url"]);
 fclose($file);
 
+//tags are separated by a space and are turned to lowercase
 $tags = explode(" ", strtolower($_POST["tags"]));
 
 $query = "INSERT INTO tag (name) VALUES";
 for ($i = 0; $i < count($tags); $i++) {
-    if (ctype_alnum($tags[$i]) && strlen($tags[$i]) <= 16)
-        $query .= " ('" . $tags[$i] . "'),";
-    else {
+    if (ctype_alnum($tags[$i]) && strlen($tags[$i]) <= 16) //cant have special characters, cant be too long
+        $query .= " ('" . $tags[$i] . "'),"; //the last comma will be removed
+    else { 
         unset($tags[$i]);
         $tags = array_values($tags);
         $i--;
@@ -42,13 +43,13 @@ for ($i = 0; $i < count($tags); $i++) {
 }
 
 if (count($tags) > 0) {
-    $mysqli->query(substr($query, 0, strlen($query) - 1) . " ON DUPLICATE KEY UPDATE id=id");
-    $query = "SELECT id FROM tag WHERE name = '" . $tags[0] . "'";
+    $mysqli->query(substr($query, 0, strlen($query) - 1) . " ON DUPLICATE KEY UPDATE id=id"); //insert, if exists do nothing
+    $query = "SELECT id FROM tag WHERE name = '" . $tags[0] . "'"; //i want to know the ids of those tags
     if (count($tags) > 1)
         for ($i = 1; $i < count($tags); $i++) $query .= " OR name = '" . $tags[$i] . "'";
     $result = $mysqli->query($query);
 
-    $query = "INSERT INTO blog_has_tag (blog_id, tag_id) VALUES";
+    $query = "INSERT INTO blog_has_tag (blog_id, tag_id) VALUES"; //i want to tie them to the submitted story
     while ($row = $result->fetch_array()) {
         $query .= " (" . $blog_id . ", " . $row[0] . "),";
     }

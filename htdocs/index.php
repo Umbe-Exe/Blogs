@@ -4,6 +4,14 @@ $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
 include 'phpScript/user_check.php';
 
+/*  
+    While scrolling, a PHP script may be called
+    to dynamically load more data.
+    $_SESSION["what"] holds a term of search
+    being always a tag to chose from, represented by an ID.
+    $_SESSION["offset"] holds the index
+    from which to load.
+*/
 $_SESSION["what"] = "rand";
 $_SESSION["offset"] = 0;
 ?>
@@ -169,6 +177,12 @@ $_SESSION["offset"] = 0;
         <div id="tflex">
             <?php
 
+            /*
+                The following query ranks stories
+                based on the like/dislike ratio and views.
+                Stories older than a month are ignored.
+            */
+
             $result = $mysqli->query("
             SELECT user.username, blog.id, blog.title, blog.time_stamp
             FROM blog
@@ -182,6 +196,10 @@ $_SESSION["offset"] = 0;
             while ($row = $result->fetch_array()) {
                 $i++;
                 $when = new DateTime($row["time_stamp"]);
+                /*
+                    $row["time_stamp"] is in readable format,
+                    therefore has to be converted to Unix timestamp.
+                */
                 $diff = time() - strtotime($row["time_stamp"]);
 
                 if ($diff < 60) $date = $diff . " second" . ($diff == 1 ? "" : "s") . " ago";
@@ -229,6 +247,13 @@ EOD;
             <div class="lbl">DISCOVER MORE OF WHAT MATTERS TO YOU</div>
             <div id="ftags">
                 <?php
+
+                /*
+                    The following query returns at most 10 tags,
+                    that are not tied to stories not yet available
+                    to the public, and ranks them based on 
+                    the number of stories associated with them.
+                */
 
                 $result = $mysqli->query("
                 SELECT tag.name, tag_id, COUNT(tag_id) AS qty FROM blog_has_tag 

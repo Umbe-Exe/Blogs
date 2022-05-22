@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$replyto = $_POST["replyto"];
-$text = $_POST["text"];
+$replyto = $_POST["replyto"]; //parent comment, or 0
+$text = htmlspecialchars($_POST["text"]);
 
 if (!isset($_SESSION["id"])) {
     echo "cant";
@@ -12,7 +12,7 @@ if (!is_numeric($replyto) || $_SESSION["csrf"] != $_POST["csrf"]) die();
 
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-if ($replyto == 0) {
+if ($replyto == 0) { 
     $stmt = $mysqli->prepare("INSERT INTO comment (user_id, blog_id, text) VALUES (?, ?, ?)");
     $stmt->bind_param("iis", $_SESSION["id"], $_SESSION["story"], $text);
     $stmt->execute();

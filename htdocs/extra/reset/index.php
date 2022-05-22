@@ -1,4 +1,4 @@
-<?php
+<?php //mail confirmation and password reset is logically the same
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 $stmt = $mysqli->prepare("
     SELECT email 

@@ -9,7 +9,7 @@ if (
 
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-$mysqli->query("DELETE FROM blog WHERE id = " . $_SESSION["story"]);
+$mysqli->query("DELETE FROM blog WHERE id = " . $_SESSION["story"]); //it will cascade to the comments aswell
 
 $dir = "/storage/emulated/0/READY/" .  $_SESSION["story"];
 array_map('unlink', glob($dir."/*.*"));

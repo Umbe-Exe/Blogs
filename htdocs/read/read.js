@@ -210,12 +210,12 @@ function sendMail() {
     }
 }
 
-function like() {
+function like() { //user wants to like the story
     $("*").css("cursor", "wait");
 
     $.post("phpScript/like.php")
         .done(function(data) {
-            if (data == "cant") open();
+            if (data == "cant") open(); //user is not logged in
             else if (data == "liked") {
                 $("#like path").css("fill", "red");
                 $("#dislike path").css("fill", "black");
@@ -238,7 +238,7 @@ function dislike() {
         });
 }
 
-function follow() {
+function follow() { //user wants to follow the publisher
     $("*").css("cursor", "wait");
 
     $.post("phpScript/follow.php")
@@ -266,19 +266,35 @@ function unfollow() {
         });
 }
 
-function closecommt() {
+function closecommt() { //slide down the comment section
     $("#comment-slider").animate({ bottom: '-80%' }, 600);
 }
+
+/*
+    0 is a dummy id representing the first wall of comments, being, to the story.
+    A wall of comments is identified by an id, if different than 0 that id
+    is also the id of the comment to reply to, visible at the top of the wall.
+
+    <id>, <prevId>, <nomore>, have all the same size the whole time
+    <currId> holds an index about those arrays
+    <id> holds the ids
+    <prevId> holds the indexes about the <id> array as to tell which was the parent comment
+    <nomore> tells whether the current wall of comments has any more comments to be loaded
+
+    id[currId] current id
+    prevId[currId] index inside <id> of the id of the parent comment
+    id[prevId[currId]] id of the parent comment whose child is id[currId]
+*/
 
 id = [-1];
 prevId = [0];
 nomore = [false];
 currId = 0;
 
-function post(uid) {
+function post(uid) { //user wants to post a comment or a reply
     $("*").css("cursor", "wait");
 
-    $.post("phpScript/post.php", {
+    $.post("phpScript/post.php", { //if uid is 0 it will be a comment, otherwise a reply
         csrf: $("#csrf").text(),
         replyto: uid,
         text: $("#wall" + uid + " textarea").val(),
@@ -321,7 +337,7 @@ function post(uid) {
     });
 }
 
-function update(uid) {
+function update(uid) { //user edited and pressed update
     $("*").css("cursor", "wait");
 
     $.post("phpScript/update.php", {
@@ -330,9 +346,9 @@ function update(uid) {
         text: $('#' + uid + ' textarea').val(),
 
     }).done(function() {
-        nw = $('#' + uid + ' textarea').val();
-        nope();
-        $('#' + uid + ' .des').text(nw);
+        nw = $('#' + uid + ' textarea').val(); //get textarea content
+        nope(); //remove interface
+        $('#' + uid + ' .des').text(nw); //place the content
         $("*").css("cursor", "");
     });
 }
@@ -346,25 +362,25 @@ function getComments() {
         });
 }
 
-function opencommt() {
+function opencommt() { //slide up the comment section
     $("#comment-slider").animate({ bottom: 0 }, 600);
 
-    if (id[currId] == -1) {
+    if (id[currId] == -1) { //first and once, load the comments to the story, not the replies
         id[currId] = 0;
 
         getComments();
     }
 }
 
-function reply(uid) {
-    $("#wall" + id[currId]).hide();
+function reply(uid) { //user wants to see the replies
+    $("#wall" + id[currId]).hide(); //hide current wall
 
     $('#back').show();
 
-    if ($('#wall' + uid).length) {
-        $('#wall' + uid).show();
+    if ($('#wall' + uid).length) { //wall already exists
+        $('#wall' + uid).show(); //show it
         for (i = 0; i < id.length; i++)
-            if (id[i] == uid) {
+            if (id[i] == uid) { //take the index of the id
                 currId = i;
                 break;
             }
@@ -395,23 +411,23 @@ function reply(uid) {
             '</div>'
         );
 
-        getComments();
+        getComments(); //load the first replies
     }
 }
 
 replacing = '';
 replacingId = 0;
 
-function edit(uid) {
+function edit(uid) { //user wants to edit his comment
 
-    if (replacingId) nope();
+    if (replacingId) nope(); //user was editing another comment so it nopes it
 
-    replacingId = uid;
-    replacing =
+    replacingId = uid; //keep track of the comment being edited
+    replacing = //get the contents somehow
         $('#' + uid + ' tr:nth-child(2)')[0].outerHTML +
         $('#' + uid + ' tr:nth-child(3)')[0].outerHTML;
 
-    $('#' + uid).append(
+    $('#' + uid).append( //show the editing interface
         '<textarea rows="5" cols="70%" maxlength="1024">' + $('#' + uid + ' .des').text() + '</textarea>' +
         '<div><a id="post" class="btn btn5" href="javascript:update(' + uid + ')">Update</a>' +
         '<a id="post" class="btn btn5" href="javascript:nope(' + uid + ')">Go back</a></div>');
@@ -420,7 +436,7 @@ function edit(uid) {
     $('#' + uid + ' tr:nth-child(2)').remove();
 }
 
-function nope(uid) {
+function nope(uid) { //resore comment 
     $('#' + replacingId + ' textarea').remove();
     $('#' + replacingId + ' div').remove();
     $('#' + replacingId).append(replacing);
@@ -429,7 +445,7 @@ function nope(uid) {
 
 function back() {
 
-    $("#wall" + id[currId]).hide();
+    $("#wall" + id[currId]).hide(); //hide the current wall
 
     currId = prevId[currId];
     $('#wall' + id[currId]).show();
@@ -437,14 +453,14 @@ function back() {
 }
 
 $(document).ready(function() {
-    $.ajaxSetup({ async: false });
-    $("#comment-slider").on('scroll', function() {
+    $.ajaxSetup({ async: false }); //need to wait for the response there are any more comments to load
+    $("#comment-slider").on('scroll', function() { //passing a callback to a scroll event listener
         scrollTop = $("#comment-slider").scrollTop();
         scrollH = $("#comment-slider")[0].scrollHeight;
         offsetHeight = $("#comment-slider").innerHeight();
 
         if (!nomore[currId])
-            if (scrollH - offsetHeight - scrollTop < 50) {
+            if (scrollH - offsetHeight - scrollTop < 50) { //if user reached the almost bottom load more
 
                 $.get("phpScript/comment.php?id=" + id[currId])
                     .done(function(data) {

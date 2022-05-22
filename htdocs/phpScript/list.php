@@ -1,15 +1,19 @@
 <?php
 session_start();
 
-$what = $_GET["what"];
+$what = $_GET["what"]; //the tag id to search with
 
-if ($_SESSION["what"] != $what) {
-    $_SESSION["what"] = $what;
-    $_SESSION["offset"] = 0;
+if ($_SESSION["what"] != $what) { 
+    $_SESSION["what"] = $what; //search term has changed
+    $_SESSION["offset"] = 0; //reset offset
 }
 
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
+/*
+    Both queries avoid stories that are
+    supposed to be unavailable to the public
+*/
 if ($_SESSION["what"] == "rand") {
     $result = $mysqli->query("
             SELECT user.username, blog.id, blog.title, blog.time_stamp, blog.desc
@@ -33,6 +37,7 @@ if ($_SESSION["what"] == "rand") {
     $result = $stmt->get_result();
 }
 
+//tells the client there are no more stories to load
 if ($result->num_rows == 0) echo "nomore";
 
 date_default_timezone_set("Europe/Rome");

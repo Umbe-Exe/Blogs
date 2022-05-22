@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$id = $_GET["id"];
+$id = $_GET["id"]; //comment id, or 0 for the comments to the story
 
 if (!is_numeric($id)) die();
 
@@ -9,12 +9,12 @@ if (!isset($_SESSION["offsets"][$id])) $_SESSION["offsets"][$id] = 0;
 
 $mysqli = new mysqli("localhost", "root", "root", "youdream");
 
-if ($id == 0) {
+if ($id == 0) { 
 
     $result = $mysqli->query("SELECT id, user_id, text, nreplies FROM comment
     WHERE blog_id = " . $_SESSION["story"] . " AND is_top = 1 
     LIMIT 6 OFFSET " . $_SESSION["offsets"][$id]);
-} else {
+} else { //get the replies
 
     $result = $mysqli->query("
     SELECT comment.id, comment.user_id, comment.text, comment.nreplies FROM comment
@@ -24,7 +24,7 @@ if ($id == 0) {
     LIMIT 6 OFFSET " . $_SESSION["offsets"][$id]);
 }
 
-if ($result->num_rows == 0) echo "nomore";
+if ($result->num_rows == 0) echo "nomore"; //tell client no more rows found
 
 $edit = "";
 
@@ -33,7 +33,7 @@ while ($row = $result->fetch_array()) {
     $user = $mysqli->query("SELECT username FROM user WHERE id = " . $row["user_id"])->fetch_array()[0];
 
     if (isset($_SESSION["id"]))
-        if ($row["user_id"] == $_SESSION["id"])
+        if ($row["user_id"] == $_SESSION["id"]) //its a user's comment
             $edit = '<a href="javascript:edit(' . $row["id"] . ')">edit</a>';
         else $edit = "";
 

@@ -1,23 +1,24 @@
-<?php
+<?php //mail confirmation and password reset is logically the same
 
 $mail = $_POST["email"];
 
 if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) echo "invalid";
 else {
     $mysqli = new mysqli("localhost", "root", "root", "youdream");
+    // we dont have to check for this
     $stmt = $mysqli->prepare("
     SELECT count(1) 
     FROM user 
     WHERE email = ?");
     $stmt->bind_param("s", $mail);
     $stmt->execute();
-    if ($stmt->get_result()->fetch_array()[0] == 0) {
+    if ($stmt->get_result()->fetch_array()[0] == 0) { //
 
         $secret = md5(uniqid(mt_rand(), true));
         $stmt = $mysqli->prepare("
         INSERT INTO confirmation (email, secret) VALUES (?, ?)
         ON DUPLICATE KEY UPDATE secret=?");
-        $stmt->bind_param("sss", $mail, $secret, $secret);
+        $stmt->bind_param("sss", $mail, $secret, $secret); //because of this, email is passed to confirmation anyways
         $stmt->execute();
 
         $to      = $mail;

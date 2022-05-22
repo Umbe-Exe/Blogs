@@ -5,6 +5,7 @@ require '../phpScript/user_check.php';
 
 $id = $_GET["story"];
 
+//get the data about the blog and its writer
 $stmt = $mysqli->prepare("
 SELECT user.username, blog.time_stamp, blog.id, blog.title, blog.views, blog.likes, blog.dislikes, blog.user_id
 FROM blog
@@ -13,7 +14,7 @@ WHERE blog.id = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
 if ($row = $stmt->get_result()->fetch_assoc()) $_SESSION["story"] = $id;
-else die();
+else die(); //it doesnt exist
 
 $title = $row["title"];
 $username = $row["username"];
@@ -25,7 +26,7 @@ $dislikes = $row["dislikes"];
 
 $mysqli->query("UPDATE blog SET views = views+1 WHERE id = $id");
 
-if (isset($_SESSION["id"])) {
+if (isset($_SESSION["id"])) { //get if the user has like or dislike or is following the publisher
     $like = $mysqli->query("SELECT EXISTS(SELECT * FROM liked 
     WHERE user_id = " . $_SESSION["id"] . " AND blog_id = " . $_SESSION["story"] . ")")->fetch_array()[0];
     $dislike = $mysqli->query("SELECT EXISTS(SELECT * FROM disliked 
@@ -38,7 +39,7 @@ if (isset($_SESSION["id"])) {
     WHERE subscriptor_id = " . $_SESSION["id"] . " AND user_id = " . $_SESSION["writer"] . ")")->fetch_array()[0];
 }
 
-$_SESSION["offsets"] = array();
+$_SESSION["offsets"] = array(); //reset the offset for the each wall of comments
 ?>
 
 <html>
@@ -227,7 +228,7 @@ $_SESSION["offsets"] = array();
                 </td>
                 <td>
                 <a class="btn btn5" href="javascript:delet()">Delete</a>
-                </td>';
+                </td>'; //options to update or delete the story
                 ?>
             </tr>
         </table>
