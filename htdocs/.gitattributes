@@ -1,2 +1,2 @@
-htdocs/editor/RFM linguist-vendored
-htdocs/editor/ckeditor linguist-vendored
+htdocs/editor/RFM/* linguist-vendored
+htdocs/editor/ckeditor/* linguist-vendored
